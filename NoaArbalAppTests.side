@@ -1,0 +1,190 @@
+{
+  "id": "77fcac0f-c5ad-4a2a-bf23-b3479473e9cc",
+  "version": "2.0",
+  "name": "NoaArbalAppTests",
+  "url": "http://localhost:8081/NoaArbalApp/",
+  "tests": [{
+    "id": "dda872ff-8aa1-4615-8cb2-16decc48fd92",
+    "name": "PositiveRegistration_Final",
+    "commands": [{
+      "id": "7da4d918-b7bb-45e9-8e8d-9077941a92dd",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8081/NoaArbalApp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48335171-df3d-47ba-9d87-09b2aebf6559",
+      "comment": "",
+      "command": "click",
+      "target": "id=studentName",
+      "targets": [
+        ["id=studentName", "id"],
+        ["css=#studentName", "css:finder"],
+        ["xpath=//input[@id='studentName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb65e5ab-ce67-4e26-801e-740c5aa1f1a8",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.getElementById(\"studentName\").value = \"noa\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48bfa8c7-4155-4728-93d8-ee140ec30e38",
+      "comment": "",
+      "command": "click",
+      "target": "id=registerButton",
+      "targets": [
+        ["id=registerButton", "id"],
+        ["css=#registerButton", "css:finder"],
+        ["xpath=//button[@id='registerButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40a59e3a-fb34-42c0-90e5-0235466aa03e",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//h1[@id='title']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'DevOps Student Registration')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0a9559f-a6ab-4b0c-9aa5-a4a109e4169f",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//h1[@id='title']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'DevOps Student Registration')]", "xpath:innerText"]
+      ],
+      "value": "DevOps Student Registration"
+    }, {
+      "id": "f8613e14-13ec-4a88-bdcd-952a89a9f59a",
+      "comment": "",
+      "command": "click",
+      "target": "id=studentName",
+      "targets": [
+        ["id=studentName", "id"],
+        ["css=#studentName", "css:finder"],
+        ["xpath=//input[@id='studentName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d4bfd8f-0822-4db9-90f4-31eb863ceb7c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=studentName",
+      "targets": [
+        ["id=studentName", "id"],
+        ["css=#studentName", "css:finder"],
+        ["xpath=//input[@id='studentName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc8a655f-d9f3-4002-831d-900985278090",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=registerButton",
+      "targets": [
+        ["id=registerButton", "id"],
+        ["css=#registerButton", "css:finder"],
+        ["xpath=//button[@id='registerButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec08cf0e-3365-431b-8a75-0091ab4b559c",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "236f56d5-18dc-4bbc-912d-06fd64e33821",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=result",
+      "targets": [
+        ["id=result", "id"],
+        ["css=#result", "css:finder"],
+        ["xpath=//p[@id='result']", "xpath:attributes"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Registration completed successfully for noa')]", "xpath:innerText"]
+      ],
+      "value": "Registration completed successfully for noa"
+    }]
+  }, {
+    "id": "19021360-09c6-4288-bbaa-59782b68c3b5",
+    "name": "NegativeRegistration",
+    "commands": [{
+      "id": "c7ec361a-cd65-41d9-bd4b-c80aa1a9bd54",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8081/NoaArbalApp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f69db25-564b-488b-8173-0ad259a21aa9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "688x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b97c86bd-0fe1-462b-a3fd-c89493e99cea",
+      "comment": "",
+      "command": "click",
+      "target": "id=registerButton",
+      "targets": [
+        ["id=registerButton", "id"],
+        ["css=#registerButton", "css:finder"],
+        ["xpath=//button[@id='registerButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c7ec262-04ff-4289-8b3b-44f577ea95a4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=result",
+      "targets": [
+        ["id=result", "id"],
+        ["css=#result", "css:finder"],
+        ["xpath=//p[@id='result']", "xpath:attributes"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Please enter a student name')]", "xpath:innerText"]
+      ],
+      "value": "Please enter a student name"
+    }]
+  }],
+  "suites": [{
+    "id": "4e758e81-8e72-4626-a9d9-53e6916962ed",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8081/NoaArbalApp/"],
+  "plugins": []
+}
